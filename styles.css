@@ -1,0 +1,238 @@
+:root {
+    --bg-primary: #1a1a1a;
+    --bg-secondary: #252525;
+    --text-primary: #e0e0e0;
+    --text-secondary: #b0b0b0;
+    --accent: #91ddcf;
+    --border: #333333;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    padding: 4px;
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border);
+    justify-content: space-between;
+}
+
+.toolbar button {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: background-color 0.2s ease;
+    min-width: fit-content;
+    white-space: nowrap;
+}
+
+.toolbar button:hover {
+    background-color: var(--accent);
+    color: var(--bg-primary);
+    border-color: var(--accent);
+}
+
+#githubButton {
+    background-color: transparent;
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    padding: 6px 10px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    flex-grow: 1;
+    max-width: 500px;
+    white-space: nowrap;
+}
+
+#githubButton:hover {
+    background-color: var(--accent);
+    color: var(--bg-primary);
+    border-color: var(--accent);
+}
+
+.editor-container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.editor-section, .preview-section {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.CodeMirror {
+    flex: 1;
+    background-color: var(--bg-primary) !important;
+    color: var(--text-primary) !important;
+    border-right: 1px solid var(--border);
+    font-size: 15px;
+}
+
+.CodeMirror a {
+    color: var(--text-primary);
+    font-weight: bold;
+}
+
+.cm-header {
+    color: var(--text-primary) !important;
+}
+
+.cm-strong {
+    color: var(--text-primary) !important;
+}
+
+.cm-em {
+    color: var(--text-primary) !important;
+}
+
+.cm-link {
+    color: var(--text-primary) !important;
+}
+
+.cm-quote {
+    color: var(--text-primary) !important;
+}
+
+.cm-list {
+    color: var(--text-primary) !important;
+}
+
+.cm-url {
+    color: var(--text-primary) !important;
+}
+
+.cm-url .cm-paren {
+    color: var(--text-primary) !important; 
+}
+
+.cm-code {
+    color: var(--text-primary) !important;
+}
+
+.cm-string {
+    color: var(--text-primary) !important; 
+}
+
+.CodeMirror .cm-comment {
+    color: var(--text-secondary);
+}
+
+.cm-formatting {
+    color: var(--text-primary) !important; 
+}
+
+.CodeMirror-cursor {
+    border-left: 1px solid white !important;
+}
+
+.CodeMirror-gutters {
+    background-color: var(--bg-secondary) !important;
+    border-right: 1px solid var(--border) !important;
+}
+
+.CodeMirror-linenumber {
+    color: var(--text-secondary) !important;
+}
+
+#preview {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: var(--bg-primary);
+}
+
+#preview h1, #preview h2, #preview h3 {
+    color: var(--accent);
+    margin-bottom: 16px;
+}
+
+#preview p {
+    margin-bottom: 16px;
+}
+
+#preview code {
+    background-color: var(--bg-secondary);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: 'Fira Code', monospace;
+}
+
+#preview pre {
+    background-color: var(--bg-secondary);
+    padding: 16px;
+    border-radius: 4px;
+    overflow-x: auto;
+    margin-bottom: 16px;
+}
+
+#preview blockquote {
+    border-left: 4px solid var(--accent);
+    margin-left: 0;
+    padding-left: 16px;
+    color: var(--text-secondary);
+}
+
+#preview img {
+    max-width: 100%;
+}
+
+#preview table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+#preview th, #preview td {
+    border: 1px solid var(--border);
+    padding: 8px;
+}
+
+#preview th {
+    background-color: var(--bg-secondary);
+}
+
+@media (max-width: 768px) {
+    .editor-container {
+        flex-direction: column;
+    }
+    
+    .CodeMirror {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+    }
+}

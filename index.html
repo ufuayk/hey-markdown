@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hey Markdown!</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button onclick="insertText('**', '**')" title="Bold (Ctrl+B)">
+                <i class="fas fa-bold"></i> Bold
+            </button>
+            <button onclick="insertText('*', '*')" title="Italic (Ctrl+I)">
+                <i class="fas fa-italic"></i> Italic
+            </button>
+            <button onclick="insertText('~~', '~~')" title="Strikethrough">
+                <i class="fas fa-strikethrough"></i> Strike
+            </button>
+            <button onclick="insertHeading()" title="Add heading">
+                <i class="fas fa-heading"></i> Heading
+            </button>
+            <button onclick="insertQuote()" title="Add quote">
+                <i class="fas fa-quote-right"></i> Quote
+            </button>
+            <button onclick="insertList('unordered')" title="Bullet list">
+                <i class="fas fa-list-ul"></i> List
+            </button>
+            <button onclick="insertList('ordered')" title="Numbered list">
+                <i class="fas fa-list-ol"></i> Numbered
+            </button>
+            <button onclick="insertLink()" title="Add link (Ctrl+K)">
+                <i class="fas fa-link"></i> Link
+            </button>
+            <button onclick="insertImage()" title="Add image">
+                <i class="fas fa-image"></i> Image
+            </button>
+            <button onclick="insertCode()" title="Add code block">
+                <i class="fas fa-code"></i> Code
+            </button>
+            <button onclick="insertTable()" title="Add table">
+                <i class="fas fa-table"></i> Table
+            </button>
+            <button onclick="insertHorizontalRule()" title="Add horizontal line">
+                <i class="fas fa-minus"></i> Line
+            </button>
+            <button onclick="insertFontAwesome('')" title="Add FontAwesomee emoji">
+                <i class="fas fa-icons"></i> FontAwesome
+            </button>
+            <button onclick="downloadMd()" title="Download as .MD">
+                <i class="fas fa-file-download"></i> Download as Markdown
+            </button>
+            <button onclick="downloadHtml()" title="Download as .HTML">
+                <i class="fas fa-code"></i> Download as HTMl
+            </button>
+            <button onclick="clearEditor()" title="Clear editor">
+                <i class="fas fa-trash"></i> Clear
+            </button>
+            <button id="githubButton" title="View on GitHub">
+                <i class="fab fa-github"></i> View developer on Github
+            </button>
+            <button onclick="toggleFullScreen()" title="Toggle fullscreen">
+                <i class="fas fa-expand"></i>
+            </button>
+        </div>
+        <div class="editor-container">
+            <div class="editor-section">
+                <textarea id="editor"></textarea>
+            </div>
+            <div class="preview-section">
+                <div id="preview"></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.3.0/marked.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
