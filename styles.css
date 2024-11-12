@@ -29,8 +29,8 @@ body {
 .toolbar {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
-    padding: 4px;
+    gap: 2px;
+    padding: 2px;
     background-color: var(--bg-secondary);
     border: 1px solid var(--border);
     justify-content: space-between;
@@ -41,7 +41,7 @@ body {
     color: var(--text-secondary);
     border: 1px solid var(--border);
     padding: 6px 10px;
-    border-radius: 4px;
+    border-radius: 64px;
     cursor: pointer;
     font-size: 14px;
     display: flex;
@@ -50,33 +50,11 @@ body {
     transition: background-color 0.2s ease;
     min-width: fit-content;
     white-space: nowrap;
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .toolbar button:hover {
-    background-color: var(--accent);
-    color: var(--bg-primary);
-    border-color: var(--accent);
-}
-
-#githubButton {
-    background-color: transparent;
-    color: var(--text-secondary);
-    border: 1px solid var(--border);
-    padding: 6px 10px;
-    font-size: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    flex-grow: 1;
-    max-width: 500px;
-    white-space: nowrap;
-}
-
-#githubButton:hover {
     background-color: var(--accent);
     color: var(--bg-primary);
     border-color: var(--accent);

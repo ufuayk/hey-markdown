@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     window.insertHeading = function() {
-        insertText("# ", "");
+        insertText("#", "");
     };
 
     window.insertQuote = function() {
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 
     window.insertTable = function() {
-        var tableMarkdown = "\n| Header 1 | Header 2 |\n| -------- | -------- |\n| Row 1 Col 1 | Row 1 Col 2 |\n| Row 2 Col 1 | Row 2 Col 2 |\n";
+        var tableMarkdown = "\n|  Header 1   |  Header 2   |\n| ----------- | ----------- |\n| Row 1 Col 1 | Row 1 Col 2 |\n| Row 2 Col 1 | Row 2 Col 2 |\n";
         insertText(tableMarkdown, "");
     };
 
@@ -60,6 +60,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.insertFontAwesome = function() {
         insertText('<i class="fa-brands fa-markdown"></i>', '');
+    };
+
+    window.insertMaterialIcon = function() {
+        insertText('<i class="material-icons">description</i>', '');
     };
 
     window.clearEditor = function() {
@@ -99,5 +103,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.getElementById('githubButton').addEventListener('click', function() {
-    window.open('https://github.com/ufuayk', '_blank');
+    window.open('https://github.com/Hey-Markdown', '_blank');
 });
