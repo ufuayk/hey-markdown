@@ -34,6 +34,9 @@
             <button onclick="insertList('ordered')" title="Numbered list">
                 <i class="fas fa-list-ol"></i> Numbered
             </button>
+            <button onclick="insertBoxed()" title="Add boxed text">
+                <i class="fas fa-box"></i> Boxed
+            </button>
             <button onclick="insertLink()" title="Add link (Ctrl+K)">
                 <i class="fas fa-link"></i> Link
             </button>
@@ -46,8 +49,14 @@
             <button onclick="insertTable()" title="Add table">
                 <i class="fas fa-table"></i> Table
             </button>
+            <button onclick="insertSup()" title="Add exponential number">
+                <i class="fas fa-1"></i> Sup
+            </button>
             <button onclick="insertHorizontalRule()" title="Add horizontal line">
                 <i class="fas fa-minus"></i> Line
+            </button>
+            <button onclick="insertEmbedVideo('')" title="Add embed YouTube video">
+                <i class="fas fa-play"></i> Embed Video
             </button>
             <button onclick="insertFontAwesome('')" title="Add FontAwesome emoji">
                 <i class="fas fa-icons"></i> FontAwesome
@@ -56,16 +65,16 @@
                 <i class="fas fa-icons"></i> Material Icons
             </button>
             <button onclick="downloadMd()" title="Download as .MD">
-                <i class="fas fa-download"></i> Download as Markdown
+                <i class="fas fa-download"></i> .MD
             </button>
             <button onclick="downloadHtml()" title="Download as .HTML">
-                <i class="fas fa-download"></i> Download as HTML
+                <i class="fas fa-download"></i> .HTML
             </button>
             <button onclick="clearEditor()" title="Clear editor">
-                <i class="fas fa-trash"></i> Clear
+                <i class="fas fa-trash"></i>
             </button>
             <button onclick="toggleFullScreen()" title="Toggle fullscreen">
-                <i class="fas fa-expand"></i> Fullscreen
+                <i class="fas fa-expand"></i>
             </button>
             <button id="githubButton" title="View on GitHub">
                 <i class="fab fa-github"></i>

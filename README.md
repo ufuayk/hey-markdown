@@ -18,7 +18,9 @@
 • **Rich Toolbar Options:** Quickly format text with bold, italics, headings, links, and more.  
 • **CodeMirror Integration:** Experience a smooth editing experience with syntax highlighting.  
 • **Easy File Downloads:** Export your work as `.md` or `.html` files with a single click.  
-• **Customizable Editor:** Toggle full-screen mode for distraction-free writing.  
+• **Customizable Editor:** Toggle full-screen mode for distraction-free writing.
+
+Believe me, I was really too lazy to write the rest, how about a test :) And I should mention that the screenshot is old, I was too lazy to do that too. LOL
 
 ## Legal Disclaimer  
 

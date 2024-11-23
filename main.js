@@ -45,6 +45,10 @@ document.addEventListener("DOMContentLoaded", function() {
         insertText("![", "](https://)");
     };
 
+    window.insertEmbedVideo = function() {
+        insertText('<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" alt="IMAGE ALT TEXT HERE" width="1920" height="540" border="10" /></a>', '');
+    };
+
     window.insertCode = function() {
         insertText("```\n", "\n```");
     };
@@ -60,6 +64,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     window.insertFontAwesome = function() {
         insertText('<i class="fa-brands fa-markdown"></i>', '');
+    };
+
+    window.insertBoxed = function() {
+        insertText('<table><td>Text Here</td></table>', '');
+    };
+
+    window.insertSup = function() {
+        insertText('1<sup>2</sup>', '');
     };
 
     window.insertMaterialIcon = function() {
