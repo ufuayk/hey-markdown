@@ -12,6 +12,8 @@
 
 ![Old Screenshot](https://raw.githubusercontent.com/ufuayk/hey-markdown/refs/heads/main/img/screenshot.png)
 
+Hey Markdown! is an [@sneakersoln](https://github.com/sneakersoln) project.
+
 ## Features  
 
 • **WYSIWYG Markdown Preview:** Instantly preview your content as you type using a side-by-side live preview.  
