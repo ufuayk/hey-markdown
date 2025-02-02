@@ -115,5 +115,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.getElementById('githubButton').addEventListener('click', function() {
-    window.open('https://github.com/Hey-Markdown', '_blank');
+    window.open('https://github.com/ufuayk', '_blank');
 });
